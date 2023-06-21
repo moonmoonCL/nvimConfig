@@ -1,7 +1,7 @@
 lua require('basic')
 lua require('keybindings')
 lua require('plugins')
-" 插件配置
+lua require('plugin-config/nvim-tree')
 
 
 
