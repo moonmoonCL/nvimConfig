@@ -34,3 +34,5 @@ map("n", "<A-j>", "<C-w>j", opt)
 map("n", "<A-k>", "<C-w>k", opt)
 map("n", "<A-l>", "<C-w>l", opt)
 
+-- nvimTree
+map('n', '<A-e>', ':NvimTreeToggle<CR>', opt)
