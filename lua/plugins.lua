@@ -3,22 +3,22 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   -- Theme
   use {
-        "ellisonleao/gruvbox.nvim",
-        requires = {"rktjmp/lush.nvim"}
-    }
+    "ellisonleao/gruvbox.nvim",
+    requires = {"rktjmp/lush.nvim"}
+  }
   use("ful1e5/onedark.nvim")
   -- NvimTree
   use {
-        'kyazdani42/nvim-tree.lua',
-        requires = 'kyazdani42/nvim-web-devicons'
-    }
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
   use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
   -- lualine
-    use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-    use("arkav/lualine-lsp-progress")
+  use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+  use("arkav/lualine-lsp-progress")
   -- telescope
-    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
-    -- treesitter
-    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+  -- treesitter
+  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 end)
 
