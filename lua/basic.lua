@@ -5,8 +5,8 @@ vim.o.fileencoding = 'utf-8'
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 -- 使用相对行号
-vim.wo.number = true
-vim.wo.relativenumber = true
+vim.o.number = true
+vim.o.relativenumber = true
 -- 高亮所在行
 vim.wo.cursorline = true
 -- 显示左侧图标指示列
