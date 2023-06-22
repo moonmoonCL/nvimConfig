@@ -6,10 +6,14 @@ return require('packer').startup(function()
         "ellisonleao/gruvbox.nvim",
         requires = {"rktjmp/lush.nvim"}
     }
+  -- NvimTree
   use {
         'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons'
     }
   use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
+  -- lualine
+    use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+    use("arkav/lualine-lsp-progress")
 end)
 
