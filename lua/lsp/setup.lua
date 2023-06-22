@@ -15,8 +15,20 @@ require("mason-lspconfig").setup({
     "yamlls",
   },
 })
+local lspconfig = require('lspconfig')
 
 -- After setting up mason-lspconfig you may set up servers via lspconfig
--- require("lspconfig").lua_ls.setup {}
--- require("lspconfig").rust_analyzer.setup {}
--- ...
+lspconfig.lua_ls.setup{}
+lspconfig.tsserver.setup{}
+lspconfig.tailwindcss.setup{}
+lspconfig.bashls.setup{}
+lspconfig.cssls.setup{}
+lspconfig.dockerls.setup{}
+lspconfig.emmet_ls.setup{}
+lspconfig.html.setup{}
+lspconfig.jsonls.setup{}
+lspconfig.pyright.setup{}
+lspconfig.taplo.setup{}
+lspconfig.yamlls.setup{}
+
+
