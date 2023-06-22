@@ -18,5 +18,7 @@ return require('packer').startup(function()
     use("arkav/lualine-lsp-progress")
   -- telescope
     use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+    -- treesitter
+    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 end)
 
