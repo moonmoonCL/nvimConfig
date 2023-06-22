@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["lualine-lsp-progress"] = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
+    url = "https://github.com/arkav/lualine-lsp-progress"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["lush.nvim"] = {
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/lush.nvim",
@@ -103,6 +113,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,
