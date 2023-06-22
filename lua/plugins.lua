@@ -6,6 +6,7 @@ return require('packer').startup(function()
         "ellisonleao/gruvbox.nvim",
         requires = {"rktjmp/lush.nvim"}
     }
+  use("ful1e5/onedark.nvim")
   -- NvimTree
   use {
         'kyazdani42/nvim-tree.lua',

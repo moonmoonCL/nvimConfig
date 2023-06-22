@@ -5,6 +5,7 @@ lua require('plugin-config/nvim-tree')
 lua require("plugin-config.bufferline")
 lua require("plugin-config.lualine")
 lua require("plugin-config.telescope")
+lua require("plugin-config.nvim-treesitter")
 
 
 
@@ -12,6 +13,6 @@ lua require("plugin-config.telescope")
 
 
 
-colorscheme gruvbox
+colorscheme onedark
 set background=dark
 
