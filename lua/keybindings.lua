@@ -35,7 +35,7 @@ map("n", "<A-k>", "<C-w>k", opt)
 map("n", "<A-l>", "<C-w>l", opt)
 
 -- nvimTree
-map('n', '<A-e>', ':NvimTreeToggle<CR>', opt)
+map('n', '<A-e>', ':NvimTreeFindFileToggle<CR>', opt)
 
 -- bufferline
 -- 左右Tab切换
