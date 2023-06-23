@@ -64,14 +64,24 @@ return require("packer").startup(function()
 			})
 		end,
 	})
+	-- use({
+	-- 	"f-person/git-blame.nvim",
+	-- 	config = function()
+	-- 		require("git-blame").setup({
+	-- 			-- your config goes here
+	-- 			-- or just leave it empty :)
+	-- 		})
+	-- 	end,
+	-- })
+	use("lewis6991/gitsigns.nvim")
+
 	use({
-		"f-person/git-blame.nvim",
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
 		config = function()
-			require("git-blame").setup({
-				-- your config goes here
-				-- or just leave it empty :)
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
 			})
 		end,
 	})
-  use("lewis6991/gitsigns.nvim")
 end)
