@@ -64,16 +64,14 @@ return require("packer").startup(function()
 			})
 		end,
 	})
-	-- use({
-	-- 	"f-person/git-blame.nvim",
-	-- 	config = function()
-	-- 		require("git-blame").setup({
-	-- 			-- your config goes here
-	-- 			-- or just leave it empty :)
-	-- 		})
-	-- 	end,
-	-- })
 	use("lewis6991/gitsigns.nvim")
+	use({
+		"akinsho/git-conflict.nvim",
+		tag = "*",
+		config = function()
+			require("git-conflict").setup()
+		end,
+	})
 
 	use({
 		"kylechui/nvim-surround",
