@@ -64,4 +64,13 @@ return require("packer").startup(function()
 			})
 		end,
 	})
+	use({
+		"f-person/git-blame.nvim",
+		config = function()
+			require("git-blame").setup({
+				-- your config goes here
+				-- or just leave it empty :)
+			})
+		end,
+	})
 end)
