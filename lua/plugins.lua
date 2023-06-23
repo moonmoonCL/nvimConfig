@@ -54,4 +54,5 @@ return require("packer").startup(function()
 			require("Comment").setup()
 		end,
 	})
+  use('aspeddro/gitui.nvim')
 end)
