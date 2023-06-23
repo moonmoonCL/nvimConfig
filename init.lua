@@ -11,7 +11,4 @@ require("lsp.cmp")
 require("lsp.ui")
 require("plugin-config.indent-blankline")
 require("lsp.null-ls")
-
--- Lua
-require("tokyonight").setup({})
-require("tokyonight").load()
+require("theme")
