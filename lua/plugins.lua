@@ -45,4 +45,5 @@ return require('packer').startup(function()
   use("lukas-reineke/indent-blankline.nvim")
   -- formatter
   use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+  use({ "ggandor/leap.nvim", requires = "tpope/vim-repeat" })
 end)
