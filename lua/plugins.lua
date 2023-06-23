@@ -48,22 +48,9 @@ return require("packer").startup(function()
 	use({ "ggandor/leap.nvim", requires = "tpope/vim-repeat" })
 	use("echasnovski/mini.pairs")
 	use("NvChad/nvim-colorizer.lua")
-	use({
-		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
-	})
+	use("numToStr/Comment.nvim")
 	use("aspeddro/gitui.nvim")
-	use({
-		"Pocco81/true-zen.nvim",
-		config = function()
-			require("true-zen").setup({
-				-- your config goes here
-				-- or just leave it empty :)
-			})
-		end,
-	})
+	use("Pocco81/true-zen.nvim")
 	use({
 		"f-person/git-blame.nvim",
 		config = function()
@@ -73,5 +60,5 @@ return require("packer").startup(function()
 			})
 		end,
 	})
-  use("lewis6991/gitsigns.nvim")
+	use("lewis6991/gitsigns.nvim")
 end)
