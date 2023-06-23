@@ -54,5 +54,14 @@ return require("packer").startup(function()
 			require("Comment").setup()
 		end,
 	})
-  use('aspeddro/gitui.nvim')
+	use("aspeddro/gitui.nvim")
+	use({
+		"Pocco81/true-zen.nvim",
+		config = function()
+			require("true-zen").setup({
+				-- your config goes here
+				-- or just leave it empty :)
+			})
+		end,
+	})
 end)
