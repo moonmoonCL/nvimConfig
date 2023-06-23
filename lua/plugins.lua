@@ -48,4 +48,10 @@ return require("packer").startup(function()
 	use({ "ggandor/leap.nvim", requires = "tpope/vim-repeat" })
 	use("echasnovski/mini.pairs")
 	use("NvChad/nvim-colorizer.lua")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 end)
