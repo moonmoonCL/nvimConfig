@@ -16,23 +16,22 @@ map("n", "<C-d>", "9j", opt)
 map('v', '<', '<gv', opt)
 map('v', '>', '>gv', opt)
 
-map("n", "z", "<Nop>", {silent = true})
-map("n", "zv", ":vsp<CR>", opt)
-map("n", "zh", ":sp<CR>", opt)
-map("n", "zc", "<C-w>c", opt)
-map("n", "zo", "<C-w>o", opt) -- close others
+map("n", "<leader>wv", ":vsp<CR>", opt)
+map("n", "<leader>wh", ":sp<CR>", opt)
+map("n", "<leader>wc", "<C-w>c", opt)
+map("n", "<leader>wo", "<C-w>o", opt) -- close others
+map("n", "<leader>w=", "<C-w>=", opt)
 
 -- 比例控制（不常用，因为支持鼠标拖拽）
-map("n", "z.", ":vertical resize +20<CR>", opt)
-map("n", "z,", ":vertical resize -20<CR>", opt)
-map("n", "z=", "<C-w>=", opt)
-map("n", "zj", ":resize +10<CR>",opt)
-map("n", "zk", ":resize -10<CR>",opt)
+-- map("n", "z.", ":vertical resize +20<CR>", opt)
+-- map("n", "z,", ":vertical resize -20<CR>", opt)
+-- map("n", "zj", ":resize +10<CR>",opt)
+-- map("n", "zk", ":resize -10<CR>",opt)
 
-map("n", "<A-h>", "<C-w>h", opt)
-map("n", "<A-j>", "<C-w>j", opt)
-map("n", "<A-k>", "<C-w>k", opt)
-map("n", "<A-l>", "<C-w>l", opt)
+map("n", "<leader>h", "<C-w>h", opt)
+map("n", "<leader>j", "<C-w>j", opt)
+map("n", "<leader>k", "<C-w>k", opt)
+map("n", "<leader>l", "<C-w>l", opt)
 
 -- nvimTree
 map('n', '<A-e>', ':NvimTreeFindFileToggle<CR>', opt)
@@ -43,7 +42,7 @@ map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
 --"moll/vim-bbye"
-map("n", "<C-w>", ":Bdelete!<CR>", opt)
+map("n", "<A-w>", ":Bdelete!<CR>", opt)
 map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
 map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
