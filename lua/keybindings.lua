@@ -48,6 +48,10 @@ map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
 map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 
+map("n", "<leader>y", '"+y', opt)
+map("v", "<leader>y", '"+y', opt)
+map("n", "<leader>p", '"+p', opt)
+map("v", "<leader>p", '"+p', opt)
 
 -- Telescope
 -- 查找文件
