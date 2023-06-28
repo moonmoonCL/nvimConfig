@@ -35,6 +35,10 @@ map("n", "<leader>l", "<C-w>l", opt)
 -- nvimTree
 map("n", "<A-e>", ":NvimTreeFindFileToggle<CR>", opt)
 
+-- diffview
+map("n", "<A-d>o", ":DiffviewOpen<CR>", opt)
+map("n", "<A-d>c", ":DiffviewClose<CR>", opt)
+
 -- bufferline
 -- 左右Tab切换
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
