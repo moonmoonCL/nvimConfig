@@ -82,12 +82,11 @@ return require("packer").startup(function()
 			})
 		end,
 	})
-  use({
-    "braxtons12/blame_line.nvim",
-    config = function()
-      require("blame_line").setup({
-
-      })
-    end
-  })
+	use({
+		"braxtons12/blame_line.nvim",
+		config = function()
+			require("blame_line").setup({})
+		end,
+	})
+	use("sindrets/diffview.nvim")
 end)
