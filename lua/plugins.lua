@@ -89,4 +89,10 @@ return require("packer").startup(function()
 		end,
 	})
 	use("sindrets/diffview.nvim")
+	use({
+		"m4xshen/hardtime.nvim",
+		config = function()
+			require("hardtime").setup({})
+		end,
+	})
 end)

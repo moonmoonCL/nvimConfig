@@ -1,3 +1,5 @@
 -- Lua
-require("tokyonight").setup({})
+require("tokyonight").setup({
+  style = "night"
+})
 require("tokyonight").load()
