@@ -95,4 +95,5 @@ return require("packer").startup(function()
 			require("hardtime").setup({})
 		end,
 	})
+	use("Abstract-IDE/penvim")
 end)
