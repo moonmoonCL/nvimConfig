@@ -39,6 +39,9 @@ map("n", "<A-e>", ":NvimTreeFindFileToggle<CR>", opt)
 map("n", "<A-d>o", ":DiffviewOpen<CR>", opt)
 map("n", "<A-d>c", ":DiffviewClose<CR>", opt)
 
+-- neogit
+map("n", "<leader>g", ":Neogit<CR>", opt)
+
 -- bufferline
 -- 左右Tab切换
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)

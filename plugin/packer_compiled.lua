@@ -193,6 +193,11 @@ _G.packer_plugins = {
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/mini.pairs",
     url = "https://github.com/echasnovski/mini.pairs"
   },
+  neogit = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/TimUntersberger/neogit"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -245,7 +250,6 @@ _G.packer_plugins = {
     url = "https://github.com/wbthomason/packer.nvim"
   },
   penvim = {
-    config = { "\27LJ\2\n—\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0005\4\t\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\16project_env\1\0\2\16config_name\18.__nvim__.lua\venable\2\rindentor\18disable_types\1\b\0\0\thelp\14dashboard\16dashpreview\rNvimTree\nvista\14sagahover\rterminal\1\0\3\18indent_length\3\4\raccuracy\3\5\venable\2\vrooter\1\0\0\rpatterns\1\4\0\0\18.__nvim__.lua\t.git\17node_modules\1\0\1\venable\2\nsetup\vpenvim\frequire\0" },
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/penvim",
     url = "https://github.com/Abstract-IDE/penvim"
@@ -289,6 +293,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: true-zen.nvim
+time([[Config for true-zen.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rtrue-zen\frequire\0", "config", "true-zen.nvim")
+time([[Config for true-zen.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -305,18 +313,10 @@ time([[Config for hardtime.nvim]], false)
 time([[Config for blame_line.nvim]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15blame_line\frequire\0", "config", "blame_line.nvim")
 time([[Config for blame_line.nvim]], false)
--- Config for: penvim
-time([[Config for penvim]], true)
-try_loadstring("\27LJ\2\n—\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0005\4\t\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\16project_env\1\0\2\16config_name\18.__nvim__.lua\venable\2\rindentor\18disable_types\1\b\0\0\thelp\14dashboard\16dashpreview\rNvimTree\nvista\14sagahover\rterminal\1\0\3\18indent_length\3\4\raccuracy\3\5\venable\2\vrooter\1\0\0\rpatterns\1\4\0\0\18.__nvim__.lua\t.git\17node_modules\1\0\1\venable\2\nsetup\vpenvim\frequire\0", "config", "penvim")
-time([[Config for penvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
--- Config for: true-zen.nvim
-time([[Config for true-zen.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rtrue-zen\frequire\0", "config", "true-zen.nvim")
-time([[Config for true-zen.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

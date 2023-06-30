@@ -96,4 +96,5 @@ return require("packer").startup(function()
 		end,
 	})
 	use("Abstract-IDE/penvim")
+	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
 end)
