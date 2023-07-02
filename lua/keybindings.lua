@@ -59,6 +59,8 @@ map("v", "<leader>y", '"+y', opt)
 map("n", "<leader>p", '"+p', opt)
 map("v", "<leader>p", '"+p', opt)
 
+map("n", "<leader><CR>", ':nohlsearch<CR>', opt)
+
 -- Telescope
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
@@ -103,3 +105,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end, opts)
 	end,
 })
+
+
