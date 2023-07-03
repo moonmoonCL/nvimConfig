@@ -7,4 +7,4 @@ nvim surround https://github.com/kylechui/nvim-surround/blob/main/doc/nvim-surro
 
 1. less 无自动补全
 2. html 的 snippets 回车 无法触发补全
-4. 
+6. 搜索 复制 粘贴的插件
