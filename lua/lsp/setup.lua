@@ -13,6 +13,7 @@ require("mason-lspconfig").setup({
     "pyright",
     "taplo",
     "yamlls",
+    "rust_analyzer",
   },
 })
 local lspconfig = require('lspconfig')
@@ -30,5 +31,6 @@ lspconfig.jsonls.setup{}
 lspconfig.pyright.setup{}
 lspconfig.taplo.setup{}
 lspconfig.yamlls.setup{}
+lspconfig.rust_analyzer.setup{}
 
 
